@@ -1,0 +1,399 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243247;
+  background: #f5f8fc;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 7%;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h1 {
+  color: #087f8c;
+  font-size: 28px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.navbar nav a {
+  color: #243247;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar nav a:hover {
+  color: #087f8c;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 90px 10%;
+  color: white;
+  background: linear-gradient(135deg, #073b4c, #087f8c);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  margin-bottom: 15px;
+  color: #9bf6ff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+}
+
+.hero-content > p:not(.tagline) {
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.hero-icon {
+  font-size: clamp(90px, 15vw, 170px);
+}
+
+.emergency-button {
+  padding: 15px 25px;
+  color: #073b4c;
+  background: #9bf6ff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.emergency-button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Emergency information */
+.emergency-panel,
+.services,
+.about,
+.newsletter {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.emergency-panel {
+  background: #e9f7f8;
+}
+
+.emergency-panel h2,
+.services h2,
+.about h2,
+.newsletter h2 {
+  margin-bottom: 15px;
+  color: #075766;
+  font-size: 32px;
+}
+
+.emergency-panel > p,
+.services > p,
+.about > p,
+.newsletter > p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 35px auto 0;
+}
+
+.service-card {
+  padding: 30px 22px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #075766;
+  font-size: 21px;
+}
+
+.service-card .number {
+  margin: 15px 0;
+  color: #087f8c;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.service-card a {
+  display: inline-block;
+  padding: 10px 18px;
+  color: white;
+  background: #087f8c;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  background: #075766;
+}
+
+.notice {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #526174;
+}
+
+/* Services */
+.services {
+  background: #ffffff;
+}
+
+.services .service-card {
+  border: 1px solid #e4edf2;
+}
+
+/* About section */
+.about {
+  background: #e9f7f8;
+}
+
+.about > p {
+  line-height: 1.9;
+}
+
+/* Email subscription section */
+.newsletter {
+  color: white;
+  background: #073b4c;
+}
+
+.newsletter h2 {
+  color: white;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+.newsletter input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #d1dce5;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.newsletter button {
+  padding: 14px 22px;
+  color: #073b4c;
+  background: #9bf6ff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: white;
+}
+
+.newsletter small {
+  display: block;
+  margin-top: 15px;
+  color: #d6e7ed;
+}
+
+/* Footer */
+footer {
+  padding: 35px 20px;
+  color: white;
+  background: #042a36;
+  text-align: center;
+}
+
+footer h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive design for phones and tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 7%;
+    text-align: center;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-panel,
+  .services,
+  .about,
+  .newsletter {
+    padding: 45px 6%;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+} 
+.call-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #087f8c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.call-button:hover {
+  background-color: #06636d;
+}
+.search-input {
+  width: 100%;
+  max-width: 450px;
+  padding: 14px;
+  margin: 20px 0;
+  border: 2px solid #087f8c;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #055a64;
+}
+.copy-button {
+  background-color: #087f8c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.copy-button:hover {
+  background-color: #055a64;
+}
+/* Improve emergency card layout */
+
+.emergency-panel .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.emergency-panel .service-card {
+  min-width: 0;
+  padding: 24px 16px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.emergency-panel .copy-button,
+.emergency-panel .call-button {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+.subscription-message {
+  background-color: #e6f7f4;
+  color: #087f8c;
+  padding: 12px 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 450px;
+}
