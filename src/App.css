@@ -317,7 +317,8 @@ footer p {
   .newsletter button {
     width: 100%;
   }
-} 
+}
+
 .call-button {
   display: inline-block;
   padding: 10px 16px;
@@ -332,6 +333,7 @@ footer p {
 .call-button:hover {
   background-color: #06636d;
 }
+
 .search-input {
   width: 100%;
   max-width: 450px;
@@ -346,6 +348,7 @@ footer p {
 .search-input:focus {
   border-color: #055a64;
 }
+
 .copy-button {
   background-color: #087f8c;
   color: white;
@@ -361,8 +364,8 @@ footer p {
 .copy-button:hover {
   background-color: #055a64;
 }
-/* Improve emergency card layout */
 
+/* Improve emergency card layout */
 .emergency-panel .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -386,6 +389,7 @@ footer p {
   box-sizing: border-box;
   text-align: center;
 }
+
 .subscription-message {
   background-color: #e6f7f4;
   color: #087f8c;
@@ -396,4 +400,202 @@ footer p {
   font-weight: 600;
   text-align: center;
   max-width: 450px;
+}
+
+/* Week 6 - Emergency Services Page */
+.emergency-page-title {
+  color: #083d4a;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subscribe-button {
+  background-color: #087f5b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.subscribe-button:hover {
+  background-color: #065f46;
+}
+
+.subscription-form {
+  max-width: 450px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #f0fdf4;
+  border-radius: 12px;
+}
+
+.subscription-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.subscription-form input[type="email"],
+.subscription-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.subscription-message {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #e0f2fe;
+  color: #075985;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .subscription-form {
+    width: auto;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+  }
+}
+
+/* Subscribe Page Heading Colours */
+.subscription-page h1,
+.subscription-page h2 {
+  color: #083d4a;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* SafeDial Week 7 Analytics Dashboard */
+
+.analytics-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.analytics-page h1 {
+  color: #083d4a;
+  text-align: center;
+}
+
+.analytics-page > p {
+  text-align: center;
+  color: #374151;
+}
+
+.analytics-page > h2 {
+  color: #083d4a;
+  margin-top: 35px;
+}
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.analytics-card {
+  background: #ffffff;
+  border: 1px solid #dce8eb;
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.analytics-card h3 {
+  color: #083d4a;
+  font-size: 16px;
+}
+
+.analytics-card h2 {
+  color: #008b83;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.analytics-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .analytics-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .analytics-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SafeDial Week 7 Campaign Performance Chart */
+
+.analytics-chart {
+  background: #ffffff;
+  padding: 30px;
+  margin-top: 35px;
+  border-radius: 14px;
+  border: 1px solid #dce8eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.analytics-chart h2 {
+  color: #083d4a;
+  margin-bottom: 10px;
+}
+
+.analytics-chart > p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.chart-item {
+  margin-bottom: 25px;
+}
+
+.chart-item p {
+  color: #083d4a;
+  margin-bottom: 10px;
+}
+
+.chart-bar-background {
+  width: 100%;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #008b83, #36b89c);
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 480px) {
+  .analytics-chart {
+    padding: 20px 15px;
+  }
 }

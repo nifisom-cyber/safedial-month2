@@ -3,8 +3,8 @@ function EmergencyServiceCard({ service }) {
     try {
       await navigator.clipboard.writeText(String(service.number))
       alert('Number copied successfully!')
-    } catch (error) {
-      alert('Could not copy the number.')
+    } catch {
+      alert('Unable to copy the number. Please copy it manually or use the Call button.')
     }
   }
 
