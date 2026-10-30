@@ -1,16 +1,76 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# SafeDial — Help Is One Dial Away
 
-Currently, two official plugins are available:
+## About SafeDial
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SafeDial is an emergency information website
+designed to help people in South Africa find
+emergency contact numbers and safety information
+quickly and easily.
 
-## React Compiler
+Our goal is to make emergency information
+simple, accessible and easy to understand.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Website Features
 
-## Expanding the Oxlint configuration
+- Home Page
+- Emergency Services
+- Emergency Services Search Function
+- Copy Emergency Number Button
+- Safety Tips
+- Subscription Form
+- About Us
+- Safety Enquiries Form
+- Analytics Dashboard
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Vite
+- React Router
+
+## Live Website
+
+https://nifisom-cyber.github.io/safedial-month2/
+
+## Testing
+
+SafeDial has been tested for:
+- Page navigation
+- Emergency services display
+- Search functionality
+- Copy number functionality
+- Safety tips display
+- Subscription form response
+- Safety enquiries form submission
+- Analytics dashboard display
+- Mobile responsiveness
+- Page refresh functionality
+
+## Current Project Status
+
+SafeDial is a working website prototype.
+
+The Analytics Dashboard currently uses
+sample data for demonstration purposes.
+
+The website is not yet available as a
+downloadable application on Google Play
+or the Apple App Store.
+
+## Future Improvements
+
+- Location sharing
+- More South African languages
+- Integration with real emergency services
+- Improved emergency assistance features
+
+## Project Purpose
+
+SafeDial was developed as a web development
+project to demonstrate how technology can
+make important safety information easier
+to access in South Africa.
